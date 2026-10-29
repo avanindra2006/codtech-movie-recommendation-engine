@@ -1,0 +1,8 @@
+# Keep source code consistent across platforms and original dataset bytes intact.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.npz binary
+data/movielens/* -text
+artifacts/model/* -text
+reports/*.csv -text

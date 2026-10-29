@@ -1,0 +1,9 @@
+{
+  "input_ratings": 100836,
+  "invalid_rows_removed": 0,
+  "duplicate_pairs_removed": 0,
+  "clean_ratings": 100836,
+  "movies": 9742,
+  "users": 610,
+  "unrated_movies": 18
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-29",
+  "python_tests_passed": 46,
+  "frontend_build": "passed",
+  "correctness_lint": "passed",
+  "browser_checks": {
+    "see_more_initial_count": 12,
+    "see_more_expanded_count": 24,
+    "unique_expanded_titles": 24,
+    "first_batch_preserved": true,
+    "favorite_genre_tested": "Sci-Fi",
+    "matching_movies_before": 2,
+    "matching_movies_after": 7,
+    "genre_change_resets_to_first_batch": 12,
+    "favorite_survives_reload": true,
+    "real_api_descriptions_available": 12,
+    "descriptions_checked": 12,
+    "mobile_viewport": "390x844",
+    "horizontal_overflow": false,
+    "test_favorite_cleared_after_check": true
+  },
+  "unit_checks": [
+    "Synopsis identity, markup cleanup, truncation, cache and offline behavior",
+    "Favorite-genre boost without excluding other genres",
+    "Lookahead and end-of-results behavior",
+    "Stable pagination with and without diversity",
+    "Pagination across the 250-item diversity shortlist boundary",
+    "Request bounds, invalid favorite genres, duplicates and negative offsets"
+  ],
+  "screenshots": [
+    "docs/screenshots/movie-descriptions-see-more.jpg",
+    "docs/screenshots/discovery-features-desktop.jpg",
+    "docs/screenshots/discovery-features-mobile.jpg"
+  ]
+}

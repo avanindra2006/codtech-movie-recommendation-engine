@@ -1,0 +1,123 @@
+{
+  "dataset": "MovieLens latest-small",
+  "k": 10,
+  "cleaning": {
+    "input_ratings": 100836,
+    "invalid_rows_removed": 0,
+    "duplicate_pairs_removed": 0,
+    "clean_ratings": 100836,
+    "movies": 9742,
+    "users": 610,
+    "unrated_movies": 18
+  },
+  "protocol": "global temporal 70/15/15; full fixed metadata catalog; warm users; binary relevance >=4; no sampled negatives; diversity off",
+  "minimum_history_likes": 5,
+  "candidate_policy": "All catalog movies except those seen before the evaluation window. Static full catalog metadata is known; historical release availability is not reconstructed.",
+  "split_sizes": {
+    "train": 70585,
+    "validation": 15125,
+    "test": 15126
+  },
+  "time_boundaries": {
+    "train_max": 1376822924,
+    "validation_min": 1376822969,
+    "validation_max": 1479542660,
+    "test_min": 1479542662
+  },
+  "validation_tuning": [
+    {
+      "alpha": 0.0,
+      "validation_ndcg": 0.016047384001635114,
+      "evaluated_users": 14
+    },
+    {
+      "alpha": 0.25,
+      "validation_ndcg": 0.040324582812172875,
+      "evaluated_users": 14
+    },
+    {
+      "alpha": 0.5,
+      "validation_ndcg": 0.06449042064318622,
+      "evaluated_users": 14
+    },
+    {
+      "alpha": 0.75,
+      "validation_ndcg": 0.1426618154595289,
+      "evaluated_users": 14
+    },
+    {
+      "alpha": 1.0,
+      "validation_ndcg": 0.1942783356441809,
+      "evaluated_users": 14
+    }
+  ],
+  "selected_alpha": 1.0,
+  "test": {
+    "popular": {
+      "precision": 0.09666666666666665,
+      "recall": 0.04319004101737914,
+      "ndcg": 0.11826354554877269,
+      "hit_rate": 0.3,
+      "novelty_bits": 9.027861915110172,
+      "genre_diversity": 0.790720458553792,
+      "evaluated_users": 30,
+      "heldout_users": 96,
+      "excluded_users": 66,
+      "catalog_coverage": 0.0074933278587559025
+    },
+    "content": {
+      "precision": 0.02333333333333333,
+      "recall": 0.0026990286558631884,
+      "ndcg": 0.024591251628252337,
+      "hit_rate": 0.13333333333333333,
+      "novelty_bits": 12.937968710606972,
+      "genre_diversity": 0.34556496178718393,
+      "evaluated_users": 30,
+      "heldout_users": 96,
+      "excluded_users": 66,
+      "catalog_coverage": 0.016218435639499075
+    },
+    "collaborative": {
+      "precision": 0.10666666666666666,
+      "recall": 0.03664369562120674,
+      "ndcg": 0.11927045666524914,
+      "hit_rate": 0.4,
+      "novelty_bits": 10.153538174363096,
+      "genre_diversity": 0.7540035273368606,
+      "evaluated_users": 30,
+      "heldout_users": 96,
+      "excluded_users": 66,
+      "catalog_coverage": 0.015397249024840895
+    },
+    "hybrid": {
+      "precision": 0.10666666666666666,
+      "recall": 0.03664369562120674,
+      "ndcg": 0.11927045666524914,
+      "hit_rate": 0.4,
+      "novelty_bits": 10.153538174363096,
+      "genre_diversity": 0.7540035273368606,
+      "evaluated_users": 30,
+      "heldout_users": 96,
+      "excluded_users": 66,
+      "catalog_coverage": 0.015397249024840895
+    }
+  },
+  "source_sha256": {
+    "movies.csv": "5a5f32dd9bb3797b8e728a1b98958789d2b13f294a69fdfbc5727f8a9611aa07",
+    "ratings.csv": "aa289ca83157595d0df6aea1be6a4ded676ddc4385472e8313a8ed9805352646"
+  },
+  "environment": {
+    "python": "3.13.16",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1"
+  },
+  "limitations": [
+    "Warm-user benchmark excludes new users and users without future positive feedback.",
+    "Unobserved films are not proven dislikes; missing ratings bias offline metrics.",
+    "Static metadata includes later catalog entries; this is not a historical deployment simulation.",
+    "MovieLens latest-small is a development dataset, not a stable research benchmark.",
+    "Match scores are ranking signals, not calibrated probabilities or predicted star ratings.",
+    "Production artifacts are refitted on all ratings after evaluation; reported metrics use only pre-test fitting."
+  ]
+}

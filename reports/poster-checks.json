@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-29",
+  "provider": "Cinemeta / MetaHub",
+  "api_key_required": false,
+  "checks": [
+    "Public poster endpoint returned HTTP 200 and image/webp",
+    "All 12 personalized recommendation posters loaded in Chrome; screenshot captured",
+    "Cached watchlist poster visibly loaded after switching views; naturalWidth 500",
+    "Both Arrival search thumbnails loaded in the open app; naturalWidth 500 each",
+    "API tests cover IMDb leading zeroes, catalog/title matching, invalid links, missing posters and unknown movie IDs",
+    "Production frontend build passed and all 33 Python tests passed"
+  ],
+  "fallback": "Missing/failed images retain original title artwork. Missing mapping API behavior is unit-tested; a forced browser network failure was not completed in this run.",
+  "note": "Earlier browser testing caught a cached-image state race on watchlist navigation; identity-based load state fixed it, and the open app watchlist was verified afterward."
+}

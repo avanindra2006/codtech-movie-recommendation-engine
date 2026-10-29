@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-29",
+  "browser": "Chrome headless",
+  "desktop": "1440x1100",
+  "mobile": "390x844",
+  "checks": [
+    "Cold start shows 12 crowd favorites",
+    "Demo profile loads three movies and excludes them from recommendations",
+    "Literal search, adding a film, changing its rating, and removing it",
+    "Genre, release era, and ranking mode update the displayed results",
+    "Bookmark appears in the watchlist",
+    "Profile and watchlist survive reload",
+    "Evaluation dashboard reads all four measured methods",
+    "390px mobile layout has no horizontal overflow",
+    "Clear picks returns to cold-start recommendations",
+    "No browser JavaScript exceptions"
+  ],
+  "errors": []
+}

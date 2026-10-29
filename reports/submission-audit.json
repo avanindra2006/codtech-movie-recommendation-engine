@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-29",
+  "release": "1.0.0",
+  "checks": {
+    "required_submission_files": "36 required files verified present and nonempty",
+    "readme_internship_fields": "passed",
+    "relative_markdown_links": "passed",
+    "dataset_provenance": "all four recorded source CSV SHA-256 hashes matched",
+    "archive_integrity": "passed",
+    "archive_exclusions": "no installed packages, virtual environment, Git history, caches, or environment files",
+    "unfinished_identity_placeholders": "none found in Markdown",
+    "common_token_and_private_key_markers_in_markdown": "none found",
+    "python_tests": "51 passed",
+    "frontend_helper_tests": "4 passed",
+    "python_correctness_lint": "passed",
+    "python_dependency_consistency": "passed",
+    "extracted_python_sources_and_model": "loaded from extracted archive using the verified Python 3.13 runtime; local API, ten home recommendations, genre preferences, watched exclusion, and 48 unique paged recommendations passed",
+    "extracted_frontend": "npm ci from lockfile, four helper tests, and production build passed after extraction; package installation used internet"
+  },
+  "documentation": [
+    "SUBMISSION_READY.md",
+    "README.md",
+    "docs/PROJECT_REPORT.md",
+    "docs/METHODOLOGY.md",
+    "docs/ARCHITECTURE.md",
+    "docs/SUBMISSION.md",
+    "docs/screenshots/README.md"
+  ],
+  "publication": {
+    "github_repository": "not published",
+    "internship_portal": "not submitted",
+    "remaining_action": "Upload extracted project contents to a unique GitHub repository and submit that repository URL."
+  },
+  "notes": [
+    "One upstream Starlette/httpx deprecation warning remains; all tests pass.",
+    "The recorded historical evaluation and data snapshot were preserved.",
+    "The external archive SHA-256 sidecar identifies the final ZIP without embedding a circular checksum inside it."
+  ]
+}

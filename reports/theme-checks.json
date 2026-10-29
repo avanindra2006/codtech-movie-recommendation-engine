@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-29",
+  "theme": "Orange and black",
+  "page_background": "rgb(16, 16, 16)",
+  "accent": "#ff782f",
+  "build": "passed",
+  "desktop_viewport": "1440x1000",
+  "mobile_viewport": "390x844",
+  "horizontal_overflow": false,
+  "atom_shapes_in_page": 0,
+  "missing_poster_frames_checked": 12,
+  "visible_clapperboard_fallbacks": 12,
+  "fallback_method": "Temporary local preview using the real app with poster mappings unavailable; all poster requests returned 404.",
+  "screenshots": [
+    "docs/screenshots/orange-black-desktop.jpg",
+    "docs/screenshots/orange-black-preview.jpg",
+    "docs/screenshots/orange-black-mobile.jpg",
+    "docs/screenshots/clapperboard-fallback.jpg"
+  ]
+}

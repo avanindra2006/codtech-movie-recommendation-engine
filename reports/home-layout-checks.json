@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-29",
+  "method": "Interactive app-browser checks on an isolated local test origin",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "checks": [
+    "Home starts with Movies you might like, Saved movies, and Watch again; watched editor is on a separate page",
+    "Recommendation row contains ten movie previews and an eleventh See more tile",
+    "Arrow control moves the horizontal scroll position; desktop document does not overflow",
+    "Recommendation See more opens its collection and preserves the first ten titles",
+    "Load more produces 48 cards with 48 distinct movie IDs",
+    "Saved movie and Watch again See more links open the matching full lists",
+    "Genre collection contains only its selected genre and survives refresh",
+    "Watched page can search, add, remove, and rate films",
+    "Low-rated watched film remains in history but is excluded from Watch again",
+    "Without favorites, genre rows follow watched-genre counts",
+    "Selecting Comedy replaces inferred genre rows with the explicit favorite",
+    "Desktop screenshots captured for Home, watched history, and a genre collection"
+  ],
+  "automatedChecks": {
+    "pythonPassed": 51,
+    "frontendHelpersPassed": 4,
+    "productionBuild": "passed",
+    "correctnessLint": "passed"
+  }
+}
