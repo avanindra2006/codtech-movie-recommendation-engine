@@ -27,9 +27,14 @@
     "docs/screenshots/README.md"
   ],
   "publication": {
-    "github_repository": "not published",
+    "github_repository": "https://github.com/avanindra2006/codtech-movie-recommendation-engine",
+    "visibility": "public",
+    "branch": "main",
+    "code_commit": "82520dfa8c70a3255145f08039eeb697b153dd88",
+    "hosted_checks": "success",
+    "hosted_checks_url": "https://github.com/avanindra2006/codtech-movie-recommendation-engine/actions/runs/40908260444",
     "internship_portal": "not submitted",
-    "remaining_action": "Upload extracted project contents to a unique GitHub repository and submit that repository URL."
+    "remaining_action": "Submit the published GitHub repository URL through the internship portal."
   },
   "notes": [
     "One upstream Starlette/httpx deprecation warning remains; all tests pass.",

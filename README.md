@@ -4,6 +4,8 @@
 
 Submission handover: [requirements checklist and upload guide](SUBMISSION_READY.md) · [project report](docs/PROJECT_REPORT.md) · [verification evidence](reports/VERIFICATION.md).
 
+Published repository: [avanindra2006/codtech-movie-recommendation-engine](https://github.com/avanindra2006/codtech-movie-recommendation-engine) · [automated checks](https://github.com/avanindra2006/codtech-movie-recommendation-engine/actions/workflows/check.yml).
+
 CineMatch is a complete local movie discovery app. Rate movies you know, get personalized recommendations with understandable reasons, adjust the genre/era/variety, and bookmark films for later. A sparse hybrid engine blends audience rating patterns, TF-IDF title/genre similarity, and Bayesian popularity. React supplies the interface; FastAPI serves predictions and the built app.
 
 ![CineMatch desktop movie rows](docs/screenshots/home-rows-desktop.jpg)
@@ -143,4 +145,4 @@ MovieLens: F. Maxwell Harper and Joseph A. Konstan. 2015. *The MovieLens Dataset
 
 MovieLens files and derived model/report data retain the [original dataset terms](data/movielens/README.txt). Original CineMatch code and artwork use MIT. See [Third-party notices](THIRD_PARTY_NOTICES.md).
 
-For CODTECH, create a **separate repository**, such as `codtech-movie-recommendation-engine`, and upload this folder's contents, including `data`, `artifacts`, `reports`, and `docs/screenshots`. Exclude `.venv`, `node_modules`, and build caches using the supplied `.gitignore`. Review [Submission checklist](docs/SUBMISSION.md), then submit the repository link after publishing.
+For CODTECH, this project has its own [public GitHub repository](https://github.com/avanindra2006/codtech-movie-recommendation-engine), including source, data, fitted artifacts, reports, and screenshots. Installed packages and build caches are excluded. Review [Submission checklist](docs/SUBMISSION.md), then submit the repository link through the internship portal.

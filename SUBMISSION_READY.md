@@ -31,16 +31,16 @@
 | Documentation | README, project report, architecture, methodology, submission guide |
 | Test and reproducibility evidence | `tests/`, `frontend/tests/`, `reports/VERIFICATION.md`, dependency locks, GitHub Actions |
 | Source attribution | `THIRD_PARTY_NOTICES.md`, original MovieLens README and provenance |
-| One unique GitHub repository and submitted link | Final action after uploading; the local archive is prepared for this step |
+| One unique GitHub repository and submitted link | Dedicated public repository published; submit its URL through the internship portal |
 
-## Upload and submit
+## Published repository and submission
 
-Suggested repository name: **codtech-movie-recommendation-engine**.
+Public repository: **[avanindra2006/codtech-movie-recommendation-engine](https://github.com/avanindra2006/codtech-movie-recommendation-engine)**.
 
-Create a dedicated GitHub repository and upload the **contents of the extracted project folder**. Put `README.md`, `src`, `frontend`, `data`, `artifacts`, `reports`, and `docs` at the repository root. Upload the extracted files, rather than only the ZIP, so reviewers can browse the code and images.
+The complete project is pushed to the `main` branch, with `README.md`, `src`, `frontend`, `data`, `artifacts`, `reports`, and `docs` at the repository root. Reviewers can browse the source code and images directly. The ZIP is an additional local handover copy.
 
 The ZIP excludes installed packages, environments, caches, and generated frontend build files. If you ran setup before uploading, use Git with the supplied `.gitignore` to leave those generated folders out. Keep the original datasets, notices, fitted model, charts, and screenshots in the repository.
 
-Verify that the repository README and screenshots render and that the repository is accessible to the internship reviewer. Copy the **GitHub repository page link** into the internship submission portal. The local `127.0.0.1` app address is a development preview and is not the submission link.
+Copy the **GitHub repository page link above** into the internship submission portal. The local `127.0.0.1` app address is a development preview and is not the submission link. Hosted test results are available under the repository's [Actions tab](https://github.com/avanindra2006/codtech-movie-recommendation-engine/actions/workflows/check.yml).
 
-GitHub publication and portal submission have not been performed by this package.
+GitHub publication is complete. Submission through the internship portal remains to be done.

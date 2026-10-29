@@ -30,10 +30,10 @@ The final [submission handover](../SUBMISSION_READY.md) maps each internship req
 ## Before submitting the link
 
 - Confirm the README internship fields.
-- Create one dedicated GitHub repository for this project.
-- Upload project files, source datasets/notices, final artifacts, charts, reports, and screenshots.
+- Dedicated public repository: [avanindra2006/codtech-movie-recommendation-engine](https://github.com/avanindra2006/codtech-movie-recommendation-engine).
+- Source, datasets/notices, final artifacts, charts, reports, and screenshots have been pushed to `main`.
 - Leave environments, installed packages, caches, and secrets out of Git.
 - Check the published repository's README images and setup commands.
 - Submit the repository URL through the internship portal before its deadline.
 
-The local package does not by itself publish a GitHub repository or submit to the internship portal.
+GitHub publication is complete. The repository URL must still be submitted through the internship portal.
